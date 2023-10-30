@@ -11,12 +11,16 @@ import { ProductComponent } from './product/product.component';
 import { RouterModule } from '@angular/router';
 import { RoutingModule } from './routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductsDisplayComponent } from './products-display/products-display.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     ProductComponent,
+    ProductsDisplayComponent,
+    ProductPageComponent,
  
   ],
   imports: [
