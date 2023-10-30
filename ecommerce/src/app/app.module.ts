@@ -1,36 +1,42 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomepageComponent } from './homepage/homepage.component';
-
-
-import { ProductComponent } from './product/product.component';
-
 import { RouterModule } from '@angular/router';
-import { RoutingModule } from './routing/app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
-import { ProductsDisplayComponent } from './products-display/products-display.component';
-import { ProductPageComponent } from './product-page/product-page.component';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ProductComponent } from './components/product/product.component';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    CartComponent,
+    CheckoutComponent,
     ProductComponent,
-    ProductsDisplayComponent,
-    ProductPageComponent,
+
  
   ],
+  
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RoutingModule,
-        HttpClientModule,
-        RouterModule.forRoot([ { path: '', component: HomepageComponent }]),
+    RouterModule.forRoot([]),
+  
+
+
   ],
-  providers: [HttpClientModule],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
