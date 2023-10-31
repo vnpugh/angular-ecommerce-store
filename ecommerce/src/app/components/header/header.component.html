@@ -7,6 +7,17 @@
               aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+                  <!-- search bar -->
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <div class="input-group-search">
+                      <span class="search-icon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </div>
+                  </div>
+                  
                          <!-- home -->
             <div class="collapse navbar-collapse" id="main-navbar">
               <ul class="navbar-nav mx-auto">
@@ -27,31 +38,22 @@
                 </li>
         
  
-                
-                <!-- search bar -->
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-                  <div class="input-group-search">
-                    <span class="search-icon">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
-                </div>
-                
-
-                     <!-- Login -->
-              <li class="nav-item login">
+                         <!-- Favorites -->
+              <li class="nav-item active">
                 <a class="nav-link" routerLink="/">
-                  <i class="fas fa-user"></i>
-                       Login
-                </a>
+                  <i class="fas fa-gamepad"></i></a>
+              </li> 
+          
+
+                     <!-- Login/signup-->
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/">
+                  <i class="fas fa-user"></i></a>
               </li>
                       <!-- shopping cart -->
-              <li class="nav-item cart">
+              <li class="nav-item active">
                 <a class="nav-link" routerLink="/">
-                  <i class="fas fa-shopping-cart"></i>
-                     Cart
-                </a>
+                  <i class="fas fa-shopping-cart"></i></a>
               </li>
               
               
