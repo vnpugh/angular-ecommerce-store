@@ -13,6 +13,7 @@ import { ProductComponent } from './components/product/product.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -35,6 +36,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    SlickCarouselModule,
     RouterModule.forRoot([]),
   
 

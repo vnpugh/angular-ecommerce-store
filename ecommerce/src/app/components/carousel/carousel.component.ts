@@ -1,26 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-
-import * as $ from 'jquery';
-import 'bootstrap';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })
-export class CarouselComponent implements OnInit {
-  constructor() { }
+export class CarouselComponent {
+  slides = [
+    { img: "assets/test.png" },
+    { img: "assets/test.png" },
+    { img: "assets/test.png" },
+    { img: "assets/test.png" }
+  ];
 
-  ngOnInit() {
- 
-    this.initCarousel();
-  }
-
-  private initCarousel() {
-
-    $('.carousel').carousel({
-      interval: 1000
-    });
-  }
+  slideConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, 
+    pauseOnHover: true,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true, 
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true, 
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 }

@@ -1,0 +1,76 @@
+
+/* Style the entire carousel container */
+.carousel {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+  
+  /* Style individual slides */
+  .slide {
+    padding: 20px;
+    background: #ba8181;
+    border: 1px solid #787070;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Style the images inside the slides */
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style the slick carousel arrows */
+  .slick-prev,
+  .slick-next {
+    background: #007BFF;
+    color: #4d668d;
+    border: 1px solid #007BFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the slick carousel dots (if used) */
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    background-color: #ddd;
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #007BFF;
+    border-color: #007BFF;
+  }
+  
