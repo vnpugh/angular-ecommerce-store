@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductComponent } from './components/product/product.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 
 
@@ -24,6 +26,8 @@ import { ProductComponent } from './components/product/product.component';
     CartComponent,
     CheckoutComponent,
     ProductComponent,
+    CarouselComponent,
+    ProductCardComponent,
 
  
   ],
