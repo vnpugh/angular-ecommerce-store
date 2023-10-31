@@ -1,0 +1,73 @@
+
+/* Styles for the navbar */
+#navbar {
+    background-color: purple !important; /* override bootstrap color */
+    padding: 1.8em 0 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+  }
+  .nav-link {
+    margin-right: 30px; 
+ margin-top: 15px;
+  }
+
+
+/* nav login */
+.nav-item.login {
+    padding-top: 5px;
+
+}
+.nav-item.login a.nav-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 550;
+ margin-left: 15em;
+  }
+
+/* nav cart */
+  .nav-item.cart {
+    padding-top: 5px;
+
+}
+.nav-item.cart a.nav-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 550;
+ 
+  }
+  
+
+/* Styles for the input group */
+.input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the search box field */
+  .form-control {
+    flex: 1;
+    margin: 0;
+    border-radius: 9px;
+    width: 15em;
+  }
+  
+  /* Styles for the search icon */
+  .input-group-search {
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 2.4em;
+  }
+  .search-icon {
+    display: inline-block;
+    font-size: 1rem;
+    color: #000000; 
+  }
+  
