@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CarouselComponent {
   slides = [
-    { img: "assets/test.png" },
-    { img: "assets/test.png" },
-    { img: "assets/test.png" },
-    { img: "assets/test.png" }
+    { img: "assets/slider-img-1.png" },
+    { img: "assets/slider-img-2.png" }
+
   ];
 
   slideConfig = {
@@ -19,6 +18,9 @@ export class CarouselComponent {
     autoplay: true, 
     pauseOnHover: true,
     infinite: true,
+    arrows: true,
+    dots: true,
+
     responsive: [
       {
         breakpoint: 992,
