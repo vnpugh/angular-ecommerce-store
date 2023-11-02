@@ -1,13 +1,22 @@
 
+.container {
+
+  margin: 10px 10px 10px 70px;
+
+}
 
 /* Logo/brand styling */
 .navbar-brand {
   font-weight: bold;
+  font-size: 25px;
+
 }
 .logo {
   color: #25965c;
   font-weight: bold;
+  font-size: 25px;
   margin-right: 200px;
+
 }
 
 /* Styles for the navbar */
@@ -17,7 +26,7 @@
  
   }
 .navbar-nav {
-    margin-left: 60px;
+    margin-left: 80px;
   }
 .nav-link {
   margin: 0 20px 0 10px;
