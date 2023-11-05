@@ -1,5 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './routing/app-routing.module';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +30,7 @@ import { GameConsolesComponent } from './components/game-consoles/game-consoles.
 import { ControllersComponent } from './components/controllers/controllers.component';
 import { CollectiblesComponent } from './components/collectibles/collectibles.component';
 import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
+import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
 
 
 
@@ -45,6 +54,7 @@ import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
     ControllersComponent,
     CollectiblesComponent,
     PcGamingComponent,
+    ItemQuantityComponent,
 
  
   ],
@@ -52,7 +62,14 @@ import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     SlickCarouselModule,
+    AppRoutingModule, 
+    HttpClientModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatBadgeModule,
     RouterModule.forRoot([]),
   
 

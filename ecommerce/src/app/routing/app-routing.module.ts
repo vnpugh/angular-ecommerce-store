@@ -10,6 +10,7 @@ import { GameConsolesComponent } from '../components/game-consoles/game-consoles
 import { ControllersComponent } from '../components/controllers/controllers.component';
 import { CollectiblesComponent } from '../components/collectibles/collectibles.component';
 import { PcGamingComponent } from '../components/pc-gaming/pc-gaming.component';
+import { CheckoutComponent } from '../components/checkout/checkout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
   {
     path: 'shop',
     component: ShopPageComponent,

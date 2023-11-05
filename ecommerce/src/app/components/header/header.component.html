@@ -1,7 +1,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 navigation" id="navbar">
           <div class="container">
-            <a class="navbar-brand" routerLink="/">Game<span class="logo">Central</span></a>
+            <a class="navbar-brand" routerLink="home">Game<span class="logo">Central</span></a>
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
               aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,18 +22,20 @@
             <div class="collapse navbar-collapse" id="main-navbar">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" routerLink="/">Home</a>
+                  <a class="nav-link" routerLink="home">Home</a>
                 </li>
         
                   <!-- shop -->
                 <li class="nav-item dropdown dropdown-slide">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="toggleShopDropdown()">Shop</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown3" *ngIf="isShopDropdownOpen">
                     <li><a routerLink="/shop">Shop</a></li>
-                    <li><a routerLink="/product-single">Category 1</a></li>
-                    <li><a routerLink="/checkout">Category 2</a></li>
-                    <li><a routerLink="/cart">Category 3</a></li>
+                    <li><a routerLink="/shop/videogames">Video Games</a></li>
+                    <li><a routerLink="/shop/gameconsoles">Consoles</a></li>
+                    <li><a routerLink="/shop/controllers">Controllers</a></li>
+                    <li><a routerLink="/shop/collectibles">Collectibles</a></li>
+                    <li><a routerLink="/shop/pcgaming">PC Gaming</a></li>
                   </ul>
                 </li>
         
@@ -51,10 +53,19 @@
                   <i class="fas fa-user"></i></a>
               </li>
                       <!-- shopping cart -->
-              <li class="nav-item active">
+              <!-- <li class="nav-item active">
                 <a class="nav-link" routerLink="/">
                   <i class="fas fa-shopping-cart"></i></a>
+              </li> -->
+              
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/">
+                  <i class="fas fa-shopping-cart">
+                    <span class="badge">1</span>
+                  </i>
+                </a>
               </li>
+              
               
               
 
