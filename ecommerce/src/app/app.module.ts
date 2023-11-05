@@ -14,6 +14,14 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
+import { ShopPageComponent } from './components/shop-page/shop-page.component';
+import { VideogamesComponent } from './components/videogames/videogames.component';
+import { GameConsolesComponent } from './components/game-consoles/game-consoles.component';
+import { ControllersComponent } from './components/controllers/controllers.component';
+import { CollectiblesComponent } from './components/collectibles/collectibles.component';
+import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
 
 
 
@@ -29,6 +37,14 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ProductComponent,
     CarouselComponent,
     ProductCardComponent,
+    LoginComponent,
+    RegistrationComponent,
+    ShopPageComponent,
+    VideogamesComponent,
+    GameConsolesComponent,
+    ControllersComponent,
+    CollectiblesComponent,
+    PcGamingComponent,
 
  
   ],
