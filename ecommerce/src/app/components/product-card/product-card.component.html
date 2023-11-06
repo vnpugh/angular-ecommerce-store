@@ -1,6 +1,6 @@
 
 <!-- product-card.component.html -->
-<div class="card">
+<!-- <div class="card">
     <img src="assets/mock-product.png" class="card-img-top" alt="Product Image">
     <div class="card-body">
       <h5 class="card-name">Product Name</h5>
@@ -8,5 +8,16 @@
       <p class="card-description">Product description</p>
       <a href="#" class="btn btn-primary">Add to Cart</a>
     </div>
+  </div> -->
+
+<!-- Want to display detailed information about each product
+when a user clicks on a product card, the info is displayed. -->
+  <div *ngIf="product">
+    <img src="" alt="">
+    <h1>{{ product.name }}</h1>
+    <h4>{{ product.price }}</h4>
+    <p>{{ product.description }}</p>
+    <h4>{{ product.category }}</h4>
+    <a href="#" class="btn btn-primary">Add to Cart</a>
   </div>
   

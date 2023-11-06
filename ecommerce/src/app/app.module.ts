@@ -31,6 +31,7 @@ import { ControllersComponent } from './components/controllers/controllers.compo
 import { CollectiblesComponent } from './components/collectibles/collectibles.component';
 import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
+import { GiantBombService } from './services/giant-bomb.service';
 
 
 
@@ -75,7 +76,7 @@ import { ItemQuantityComponent } from './components/item-quantity/item-quantity.
 
 
   ],
-  providers: [ ],
+  providers: [GiantBombService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
