@@ -1,7 +1,7 @@
 
 .container {
 
-  margin: 10px 10px 10px 70px;
+  margin: 15px 15px;
 
 }
 
@@ -9,13 +9,15 @@
 .navbar-brand {
   font-weight: bold;
   font-size: 25px;
+  margin-left: 35px;
+  margin-right: 50px;
 
 }
 .logo {
   color: #25965c;
   font-weight: bold;
   font-size: 25px;
-  margin-right: 200px;
+  margin-right: 20px;
 
 }
 
@@ -26,10 +28,10 @@
  
   }
 .navbar-nav {
-    margin-left: 80px;
+    margin-left: 10px;
   }
 .nav-link {
-  margin: 0 20px 0 10px;
+  margin-left: 30px;
   margin-top: 2px;
   color: #000000;
   }
@@ -40,13 +42,15 @@
     padding-top: 2px;
 
 }
+
+
 .nav-item.login a.nav-link {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     font-size: small;
-    margin-left: 15em;
+  
     color: #000000;
   }
 
@@ -62,17 +66,17 @@
     align-items: center;
     text-align: center;
     font-size: small;
-
     color: #000000;
  
   }
   
 
-/* Styles for the seacrch box */
+/* Styles for the search box */
 .input-group {
     display: flex;
     align-items: center;
-    width: 35rem;
+    width: 20rem;
+    margin-right: 20px;
   
   }
   .form-control {

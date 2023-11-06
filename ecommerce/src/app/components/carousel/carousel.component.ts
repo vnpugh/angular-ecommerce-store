@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class CarouselComponent {
   slides = [
     { img: "assets/slider-img-1.png" },
-    { img: "assets/slider-img-2.png" }
+    { img: "assets/slider-img-2.png" },
+    { img: "assets/slider-img-3.png" }
 
   ];
 
