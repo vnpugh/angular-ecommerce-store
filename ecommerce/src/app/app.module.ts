@@ -32,6 +32,8 @@ import { CollectiblesComponent } from './components/collectibles/collectibles.co
 import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
 import { GiantBombService } from './services/giant-bomb.service';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { MockProductService } from './services/mock-product.service';
 
 
 
@@ -56,6 +58,7 @@ import { GiantBombService } from './services/giant-bomb.service';
     CollectiblesComponent,
     PcGamingComponent,
     ItemQuantityComponent,
+    ProductListComponent,
 
  
   ],
@@ -76,7 +79,7 @@ import { GiantBombService } from './services/giant-bomb.service';
 
 
   ],
-  providers: [GiantBombService],
-  bootstrap: [AppComponent]
+  providers: [MockProductService, GiantBombService],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

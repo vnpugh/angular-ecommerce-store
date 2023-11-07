@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../components/home/home.component';
+
 import { LoginComponent } from '../components/login/login.component';
 import { RegistrationComponent } from '../components/registration/registration.component';
 import { CartComponent } from '../components/cart/cart.component';
@@ -15,15 +16,18 @@ import { PcGamingComponent } from '../components/pc-gaming/pc-gaming.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
-  { path: 'videogames', component: VideogamesComponent },
+  { path: 'videogames', component: VideogamesComponent }, // Add this route
   { path: 'gameconsoles', component: GameConsolesComponent },
   { path: 'controllers', component: ControllersComponent },
+];
+
+
 
   // {
   //   path: 'shop',
@@ -37,7 +41,7 @@ const routes: Routes = [
   //     { path: 'pcgaming', component: PcGamingComponent}
   //   ]
   // }
-];
+// ];
 
 
 
