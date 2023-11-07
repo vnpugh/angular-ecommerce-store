@@ -1,1 +1,17 @@
 <p>controllers works!</p>
+
+<h1>controllers</h1>
+
+<div class="product-list">
+  <div *ngFor="let product of products" class="product-card">
+    <img [src]="product.image" [alt]="product.name">
+    <h2>{{ product.name }}</h2>
+    <p>Price: ${{ product.price }}</p>
+    <p>{{ product.description }}</p>
+
+    <button class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>
+
+
+
