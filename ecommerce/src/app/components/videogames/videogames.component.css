@@ -1,0 +1,99 @@
+/* .product-card {
+    width: 20%; 
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #aaa;
+  }
+  
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+    */
+
+
+
+
+
+    .product-card {
+      width: 20%; /* Five cards per row, each occupying 20% of the container width */
+      margin: 10px;
+      display: inline-block;
+    }
+    
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px #7f7f7f;
+      position: relative;
+    }
+    
+ 
+
+    .new-release::before {
+      content: 'New Release';
+      position: absolute;
+      background-color: green;
+      color: white;
+      padding: 2px 10px;
+      font-weight: bold;
+      z-index: 1; 
+  }
+
+  .pre-order::before {
+    content: 'Pre Order';
+    position: absolute;
+    background-color: blue;
+    color: white;
+    padding: 2px 10px;
+    font-weight: bold;
+    z-index: 1; 
+}
+
+
+
+
+    
+    .card-img-top {
+      max-width: 100%;
+      height: auto;
+   
+    }
+    
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+    

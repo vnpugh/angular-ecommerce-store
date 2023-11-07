@@ -18,7 +18,7 @@ export class GameConsolesComponent implements OnInit {
     const allProducts = this.productService.getProducts();
 
     // Filter to only include consoles
-    this.products = allProducts.filter(product => product.category.name === 'consoles');
+    this.products = allProducts.filter(product => product.category.name === 'gameconsoles');
   }
 
 

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'register', component: RegistrationComponent },
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
-  { path: 'videogames', component: VideogamesComponent }, // Add this route
+  { path: 'videogames', component: VideogamesComponent }, 
   { path: 'gameconsoles', component: GameConsolesComponent },
   { path: 'controllers', component: ControllersComponent },
 ];

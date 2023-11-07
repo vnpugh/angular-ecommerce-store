@@ -1,17 +1,18 @@
-<p>controllers works!</p>
+
 
 <h1>controllers</h1>
-
 <div class="product-list">
   <div *ngFor="let product of products" class="product-card">
-    <img [src]="product.image" [alt]="product.name">
-    <h2>{{ product.name }}</h2>
-    <p>Price: ${{ product.price }}</p>
-    <p>{{ product.description }}</p>
-
-    <button class="btn btn-primary">Add to Cart</button>
+    <div class="card">
+      <img [src]="product.image" [alt]="product.name" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title">{{ product.name }}</h2>
+        <p class="card-text">Price: ${{ product.price }}</p>
+        <p class="card-text">{{ product.description }}</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
   </div>
 </div>
-
 
 

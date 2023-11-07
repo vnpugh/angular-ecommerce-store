@@ -7,4 +7,6 @@ export interface Product {
     description: string;
     image: string;
     category: Category;
-  }
+    isNewRelease: boolean;
+    isPreOrder: boolean;
+}
