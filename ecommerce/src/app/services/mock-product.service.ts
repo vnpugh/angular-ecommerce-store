@@ -36,7 +36,7 @@ export class MockProductService {
     },
     {
       id: 1.2,
-      name: 'Metal Gear Solid Master Collection Vol 1',
+      name: 'Metal Gear Solid Master Vol 1',
       price: 59.99,
       description: 'This is a sample product.',
       image: 'assets/mock-img-6.png',
@@ -65,7 +65,7 @@ export class MockProductService {
 
     {
       id: 1.4,
-      name: 'Super Mario Bros. Wonder - Nintendo Switch',
+      name: 'Super Mario Bros. Wonder',
       price: 59.99,
       description: 'This is a sample product.',
       image: 'assets/mock-img-8.png',
@@ -80,7 +80,7 @@ export class MockProductService {
 
     {
       id: 1.5,
-      name: 'Borderlands 3 Ultimate Edition - Nintendo Switch',
+      name: 'Borderlands 3 Ultimate Edition',
       price: 59.99,
       description: 'This is a sample product.',
       image: 'assets/mock-img-9.png',
@@ -108,7 +108,7 @@ export class MockProductService {
     },
     {
       id: 1.7,
-      name: 'Final Fantasy VII: Rebirth - PlayStation 5',
+      name: 'Final Fantasy VII: Rebirth',
       price: 69.99,
       description: 'This is a sample product.',
       image: 'assets/mock-img-5.png',
