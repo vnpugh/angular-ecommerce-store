@@ -6,6 +6,8 @@ import { Product } from '../models/product.model';
 })
 export class MockProductService {
   private mockProducts: Product[] = [
+
+    // Games
     {
       id: 1,
       name: 'Call of Duty',
@@ -122,17 +124,11 @@ export class MockProductService {
     },
 
 
-
-
-
-
-
-
-
+  // Consoles
 
     {
       id: 2,
-      name: 'Sony PlayStation 5 Console',
+      name: 'Sony PlayStation 5 Console - Standard Edition',
       price: 444.99,
       description: 'Another sample product.',
       image: 'assets/mock-img-11.png',
@@ -145,7 +141,79 @@ export class MockProductService {
       isPreOrder: false
     },
     {
-        id: 2,
+      id: 2.1,
+      name: 'Microsoft Xbox Series X Console - New Condition',
+      price: 499.99,
+      description: 'Another sample product.',
+      image: 'assets/mock-img-17.png',
+      category: {
+          id: 2, name: 'gameconsoles',
+          description: '',
+          image: ''
+      },
+      isNewRelease: true, 
+      isPreOrder: false
+    },
+    {
+      id: 2.2,
+      name: 'Sony PlayStation 4 1TB Console Call of Duty: Black Ops III',
+      price: 499.99,
+      description: 'Another sample product.',
+      image: 'assets/mock-img-14.png',
+      category: {
+          id: 2, name: 'gameconsoles',
+          description: '',
+          image: ''
+      },
+      isNewRelease: false, 
+      isPreOrder: true
+    },
+    {
+      id: 2.3,
+      name: 'Microsoft Xbox One Console 1TB Halo 5 Limited Edition',
+      price: 250.99,
+      description: 'Another sample product.',
+      image: 'assets/mock-img-19.png',
+      category: {
+          id: 2, name: 'gameconsoles',
+          description: '',
+          image: ''
+      },
+      isNewRelease: false, 
+      isPreOrder: false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // Controllers
+    {
+        id: 3,
         name: 'PowerA Pink Enhanced Wired Controller',
         price: 37.99,
         description: 'Another sample product.',
