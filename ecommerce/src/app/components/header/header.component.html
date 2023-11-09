@@ -9,14 +9,58 @@
             </button>
 
                   <!-- search bar -->
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search games, consoles & more" aria-label="Search">
+
+                  <!-- <div class="input-group">
+                    <input type="text" class="form-control" 
+                        placeholder="Search games, consoles & more" 
+                        aria-label="Search"   name="search"
+                        [(ngModel)]="searchQuery">
                     <div class="input-group-search">
                       <span class="search-icon">
                         <i class="fas fa-search"></i>
                       </span>
                     </div>
-                  </div>
+                  </div> -->
+              
+                    
+         <!-- search bar -->
+
+<form (ngSubmit)="searchProducts()">
+  <div class="input-group">
+    <input type="text" class="form-control" 
+      placeholder="Search games, consoles & more" 
+      aria-label="Search" name="search"
+      [(ngModel)]="searchQuery">
+    <div class="input-group-search">
+      <span class="search-icon" (click)="searchProducts()">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+  </div>
+</form>
+
+
+
+<!-- Display search results -->
+<div *ngIf="products.length > 0">
+  <h3>Search Results:</h3>
+  <ul>
+    <li *ngFor="let product of products">{{ product.name }}</li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
                   
                          <!-- home -->
                          <div class="collapse navbar-collapse" id="main-navbar">

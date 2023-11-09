@@ -100,7 +100,17 @@
     display: inline-block;
     font-size: 1rem;
     color: #000000; 
+    cursor: pointer;
   }
+
+.search-icon:hover {
+  color: blue;
+
+}
+
+
+
+
   
 
   
