@@ -15,6 +15,7 @@ import { CollectiblesComponent } from '../components/collectibles/collectibles.c
 import { PcGamingComponent } from '../components/pc-gaming/pc-gaming.component';
 import { HeaderComponent } from '../components/header/header.component';
 import { HomeComponent } from '../components/home/home.component';
+import { SaleComponent } from '../components/sale/sale.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'videogames', component: VideogamesComponent }, 
   { path: 'gameconsoles', component: GameConsolesComponent },
   { path: 'controllers', component: ControllersComponent },
+  { path: 'sale', component: SaleComponent },
 ];
 
 
