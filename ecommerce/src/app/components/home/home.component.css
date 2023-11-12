@@ -19,9 +19,15 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .rounded {
     width: 250px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.rounded:hover {
+    transform: scale(1.09);
 }
