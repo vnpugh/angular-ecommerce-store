@@ -7,30 +7,19 @@
               aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
-                  <!-- search bar -->
-
-                  <!-- <div class="input-group">
-                    <input type="text" class="form-control" 
-                        placeholder="Search games, consoles & more" 
-                        aria-label="Search"   name="search"
-                        [(ngModel)]="searchQuery">
-                    <div class="input-group-search">
-                      <span class="search-icon">
-                        <i class="fas fa-search"></i>
-                      </span>
-                    </div>
-                  </div> -->
-              
                     
          <!-- search bar -->
 
 <form (ngSubmit)="searchProducts()">
   <div class="input-group">
-    <input type="text" class="form-control" 
-      placeholder="Search games, consoles & more" 
-      aria-label="Search" name="search"
-      [(ngModel)]="searchQuery">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search games, consoles & more"
+      aria-label="Search"
+      name="search"
+      [(ngModel)]="searchQuery"
+    />
     <div class="input-group-search">
       <span class="search-icon" (click)="searchProducts()">
         <i class="fas fa-search"></i>
@@ -38,27 +27,6 @@
     </div>
   </div>
 </form>
-
-
-
-<!-- Display search results -->
-<div *ngIf="products.length > 0">
-  <h3>Search Results:</h3>
-  <ul>
-    <li *ngFor="let product of products">{{ product.name }}</li>
-  </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
 
 
                   
@@ -81,20 +49,7 @@
                               <a class="nav-link" routerLink="/controllers" routerLinkActive="active">Controllers</a>
                             </li>
           
-                        
-                  <!-- shop -->
-                <!-- <li class="nav-item dropdown dropdown-slide">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="toggleShopDropdown()">Shop</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown3" *ngIf="isShopDropdownOpen">
-                    <li><a routerLink="/shop">Shop</a></li>
-                    <li><a routerLink="/shop/videogames">Video Games</a></li>
-                    <li><a routerLink="/shop/gameconsoles">Consoles</a></li>
-                    <li><a routerLink="/shop/controllers">Controllers</a></li>
-                    <li><a routerLink="/shop/collectibles">Collectibles</a></li>
-                    <li><a routerLink="/shop/pcgaming">PC Gaming</a></li>
-                  </ul>
-                </li> -->
+       
         
  
                          <!-- Favorites -->
@@ -109,12 +64,7 @@
                 <a class="nav-link" routerLink="/">
                   <i class="fas fa-user"></i></a>
               </li>
-                      <!-- shopping cart -->
-              <!-- <li class="nav-item active">
-                <a class="nav-link" routerLink="/">
-                  <i class="fas fa-shopping-cart"></i></a>
-              </li> -->
-              
+
               <li class="nav-item active">
                 <a class="nav-link" routerLink="/">
                   <i class="fas fa-shopping-cart">

@@ -34,6 +34,8 @@ import { ItemQuantityComponent } from './components/item-quantity/item-quantity.
 import { GiantBombService } from './services/giant-bomb.service';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { MockProductService } from './services/mock-product.service';
+import { SearchComponent } from './components/search/search.component';
+import { SaleComponent } from './components/sale/sale.component';
 
 
 
@@ -59,6 +61,8 @@ import { MockProductService } from './services/mock-product.service';
     PcGamingComponent,
     ItemQuantityComponent,
     ProductListComponent,
+    SearchComponent,
+    SaleComponent,
 
  
   ],
@@ -75,6 +79,7 @@ import { MockProductService } from './services/mock-product.service';
     MatIconModule,
     MatBadgeModule,
     RouterModule.forRoot([]),
+
   
 
 
