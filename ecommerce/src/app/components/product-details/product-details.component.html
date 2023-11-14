@@ -11,4 +11,12 @@
     </div>
     <button (click)="addToCart(product, quantity)" class="btn btn-primary">Add to Cart</button>
   </div>
+
+
+  <!-- ... existing HTML ... -->
+<!-- Add an area in your template for the message -->
+<div *ngIf="message" class="alert alert-success" role="alert">
+  {{ message }}
+</div>
+
   

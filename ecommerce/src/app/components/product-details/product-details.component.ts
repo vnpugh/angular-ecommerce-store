@@ -2,19 +2,26 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MockProductService } from 'src/app/services/mock-product.service';
 import { Product } from 'src/app/models/product.model';
+import { CartService } from 'src/app/services/cart.service';
+
 
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
+
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
   quantity: number = 1;
+message: any;
   
   constructor(
     private route: ActivatedRoute, 
-    private mockProductService: MockProductService) {}
+    private mockProductService: MockProductService,
+    private cartService: CartService
+    
+    ) {}
 
   ngOnInit() {
     // Get the 'id' parameter
@@ -32,10 +39,11 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   addToCart(product: Product, quantity: number) {
-    if (product && quantity) {
-      // Implement your add to cart logic here
-      console.log(`Adding ${quantity} of ${product.name} to cart.`);
-      // Add logic to actually add the product to the cart
+    if (product && quantity > 0) {
+
+      this.cartService.addToCart(product, quantity);
+      this.message = `${product.name} added to cart: Quantity ${quantity}`;
+
     }
   }
 }
