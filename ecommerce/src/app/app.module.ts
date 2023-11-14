@@ -37,6 +37,7 @@ import { MockProductService } from './services/mock-product.service';
 import { SearchComponent } from './components/search/search.component';
 import { SaleComponent } from './components/sale/sale.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 
 
@@ -65,6 +66,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     SearchComponent,
     SaleComponent,
     ProductDetailsComponent,
+    CartItemComponent,
 
  
   ],
