@@ -18,7 +18,7 @@ export class HeaderComponent {
 
   searchProducts() {
     if (this.searchQuery.trim() !== '') {
-      this.products = this.productService.getProducts().filter(product => {
+      this.products = this.productService.getProducts().filter((product: { name: string; }) => {
         return product.name.toLowerCase().includes(this.searchQuery.toLowerCase());
       });
 

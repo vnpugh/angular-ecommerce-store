@@ -16,7 +16,7 @@ import { PcGamingComponent } from '../components/pc-gaming/pc-gaming.component';
 import { HeaderComponent } from '../components/header/header.component';
 import { HomeComponent } from '../components/home/home.component';
 import { SaleComponent } from '../components/sale/sale.component';
-
+import { ProductDetailsComponent } from '../components/product-details/product-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -30,6 +30,8 @@ const routes: Routes = [
   { path: 'gameconsoles', component: GameConsolesComponent },
   { path: 'controllers', component: ControllersComponent },
   { path: 'sale', component: SaleComponent },
+  {
+    path: 'product-details/:id', component: ProductDetailsComponent}
 ];
 
 

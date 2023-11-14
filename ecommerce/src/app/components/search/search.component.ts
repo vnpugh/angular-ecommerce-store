@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
 
       if (this.searchQuery.length > 0) {
       
-        this.filteredProducts = this.productService.getProducts().filter((product) => {
+        this.filteredProducts = this.productService.getProducts().filter((product: { name: string; }) => {
           return product.name.toLowerCase().includes(this.searchQuery);
         });
       } else {

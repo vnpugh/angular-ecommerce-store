@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product.model';
 
+
 @Injectable({
   providedIn: 'root',
 })
 export class MockProductService {
+
   private mockProducts: Product[] = [
 
     // Games
@@ -229,6 +231,18 @@ export class MockProductService {
 
 
   ];
+  product: any;
+  products: any;
+
+
+  constructor() {}
+
+  //Methods
+
+  getProductById(id: number): Product | undefined {
+  
+    return this.mockProducts.find((product: { id: number; }) => product.id === id);
+  }
 
   getProducts(): Product[] {
     return this.mockProducts;

@@ -19,6 +19,6 @@ export class ControllersComponent implements OnInit {
     const allProducts = this.productService.getProducts();
 
     // Filter to only include controllers
-    this.products = allProducts.filter(product => product.category.name === 'controllers');
+    this.products = allProducts.filter((product: { category: { name: string; }; }) => product.category.name === 'controllers');
   }
 }

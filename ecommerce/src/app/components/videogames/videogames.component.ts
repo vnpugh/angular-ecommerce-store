@@ -17,7 +17,7 @@ export class VideogamesComponent implements OnInit {
     const allProducts = this.productService.getProducts();
 
     // Filter to only include video games
-    this.products = allProducts.filter(product => product.category.name === 'videogames');
+    this.products = allProducts.filter((product: { category: { name: string; }; }) => product.category.name === 'videogames');
   }
 }
 
