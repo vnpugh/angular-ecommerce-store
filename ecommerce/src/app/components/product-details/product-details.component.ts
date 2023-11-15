@@ -14,7 +14,7 @@ import { CartService } from 'src/app/services/cart.service';
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
   quantity: number = 1;
-message: any;
+  message: string = '';
   
   constructor(
     private route: ActivatedRoute, 

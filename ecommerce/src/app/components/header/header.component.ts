@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable, debounceTime, distinctUntilChanged, map } from 'rxjs';
+import { CartService } from 'src/app/services/cart.service';
 import { MockProductService } from 'src/app/services/mock-product.service';
 import { Router } from '@angular/router'; 
 
@@ -9,41 +9,35 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
   searchQuery: string = '';
   products: any[] = [];
   filteredProducts: any;
 
-  constructor(private productService: MockProductService, private router: Router) {} // Inject the Router service
+  constructor(
+    private productService: MockProductService, 
+    private router: Router,
+    public cartService: CartService
+  ) {}
 
   searchProducts() {
-    if (this.searchQuery.trim() !== '') {
-      this.products = this.productService.getProducts().filter((product: { name: string; }) => {
-        return product.name.toLowerCase().includes(this.searchQuery.toLowerCase());
-      });
+    // Trim the searchQuery and check it's not empty
+    const trimmedQuery = this.searchQuery.trim();
+    if (trimmedQuery !== '') {
+      // Filter the products based on the trimmed search query
+      this.products = this.productService.getProducts().filter((product: { name: string; }) =>
+        product.name.toLowerCase().includes(trimmedQuery.toLowerCase())
+      );
 
-      this.searchQuery = ''; // Clear the search input
-      this.router.navigate(['/search-results'], { queryParams: { q: this.searchQuery } });
+      // Navigate to the search results page with the search query as a parameter
+      this.router.navigate(['/search-results'], { queryParams: { q: trimmedQuery } })
+        .then(() => {
+          // Clear the search input after successful navigation
+          this.searchQuery = '';
+        })
+        .catch((error) => {
+          // Handle any navigation errors here
+          console.error('Navigation error:', error);
+        });
     }
   }
 }
-
-  
- 
-
-
-
-
-
-
-
-
-
-  // isShopDropdownOpen: boolean = false;
-
-  // toggleShopDropdown() {
-  //   this.isShopDropdownOpen = !this.isShopDropdownOpen;
- 
-
-
-    // }

@@ -68,7 +68,7 @@
               <li class="nav-item active">
                 <a class="nav-link" routerLink="/">
                   <i class="fas fa-shopping-cart">
-                    <span class="badge">1</span>
+                    <span class="badge">{{ cartService.cartItemCount$ | async }}</span>
                   </i>
                 </a>
               </li>
