@@ -3,6 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { MockProductService } from 'src/app/services/mock-product.service';
 import { Product } from 'src/app/models/product.model';
 import { CartService } from 'src/app/services/cart.service';
+import { Router } from '@angular/router';
+
+
+
 
 
 @Component({
@@ -12,16 +16,22 @@ import { CartService } from 'src/app/services/cart.service';
 })
 
 export class ProductDetailsComponent implements OnInit {
+
   product: Product | undefined;
   quantity: number = 1;
   message: string = '';
   
   constructor(
     private route: ActivatedRoute, 
+    private router: Router,
     private mockProductService: MockProductService,
     private cartService: CartService
     
     ) {}
+
+    viewCart() {
+      this.router.navigate(['/cart-details']);
+    }
 
   ngOnInit() {
     // Get the 'id' parameter

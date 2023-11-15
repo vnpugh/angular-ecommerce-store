@@ -38,6 +38,7 @@ import { SearchComponent } from './components/search/search.component';
 import { SaleComponent } from './components/sale/sale.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 
 
 
@@ -67,6 +68,8 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     SaleComponent,
     ProductDetailsComponent,
     CartItemComponent,
+
+    CartDetailsComponent,
 
  
   ],

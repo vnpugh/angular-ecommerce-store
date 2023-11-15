@@ -5,6 +5,7 @@ import { SearchComponent } from '../components/search/search.component';
 import { LoginComponent } from '../components/login/login.component';
 import { RegistrationComponent } from '../components/registration/registration.component';
 import { CartComponent } from '../components/cart/cart.component';
+import { CartDetailsComponent } from '../components/cart-details/cart-details.component';
 import { VideogamesComponent } from '../components/videogames/videogames.component';
 import { GameConsolesComponent } from '../components/game-consoles/game-consoles.component';
 import { ControllersComponent } from '../components/controllers/controllers.component';
@@ -31,7 +32,9 @@ const routes: Routes = [
   { path: 'controllers', component: ControllersComponent },
   { path: 'sale', component: SaleComponent },
   {
-    path: 'product-details/:id', component: ProductDetailsComponent}
+    path: 'product-details/:id', component: ProductDetailsComponent},
+    { path: 'cart-details', component: CartDetailsComponent },
+
 ];
 
 

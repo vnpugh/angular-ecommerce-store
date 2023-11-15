@@ -19,6 +19,10 @@ export class HeaderComponent {
     public cartService: CartService
   ) {}
 
+  viewCart() {
+    this.router.navigate(['/cart-details']);
+  }
+
   searchProducts() {
     // Trim the searchQuery and check it's not empty
     const trimmedQuery = this.searchQuery.trim();
