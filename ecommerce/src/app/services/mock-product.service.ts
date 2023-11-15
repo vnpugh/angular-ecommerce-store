@@ -21,6 +21,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.30.23',
       isNewRelease: false, 
       isPreOrder: true
     },
@@ -35,6 +36,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.10.23',
       isNewRelease: true, 
       isPreOrder: false
     },
@@ -49,6 +51,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.14.23',
       isNewRelease: true, 
       isPreOrder: false
     },
@@ -63,6 +66,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.15.23',
       isNewRelease: true, 
       isPreOrder: false
     },
@@ -78,6 +82,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.10.23',
       isNewRelease: true, 
       isPreOrder: false
     },
@@ -93,6 +98,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.12.23',
       isNewRelease: true, 
       isPreOrder: false
     },
@@ -107,6 +113,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '09.10.23',
       isNewRelease: false, 
       isPreOrder: false
     },
@@ -121,6 +128,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '09.10.23',
       isNewRelease: false, 
       isPreOrder: false
     },
@@ -139,6 +147,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '08.10.23',
       isNewRelease: false, 
       isPreOrder: false
     },
@@ -153,6 +162,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '11.15.23',
       isNewRelease: true, 
       isPreOrder: false
     },
@@ -167,6 +177,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '12.18.23',
       isNewRelease: false, 
       isPreOrder: true
     },
@@ -181,6 +192,7 @@ export class MockProductService {
           description: '',
           image: ''
       },
+      releaseDate: '07.10.23',
       isNewRelease: false, 
       isPreOrder: false
     },
@@ -225,6 +237,7 @@ export class MockProductService {
             description: '',
             image: ''
         },
+        releaseDate: '05.19.23',
         isNewRelease: false, 
         isPreOrder: false
       },

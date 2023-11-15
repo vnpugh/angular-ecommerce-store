@@ -10,4 +10,5 @@ export interface Product {
     category: Category;
     isNewRelease: boolean;
     isPreOrder: boolean;
+    releaseDate: string;
 }

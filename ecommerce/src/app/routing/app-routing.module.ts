@@ -11,7 +11,6 @@ import { GameConsolesComponent } from '../components/game-consoles/game-consoles
 import { ControllersComponent } from '../components/controllers/controllers.component';
 import { CheckoutComponent } from '../components/checkout/checkout.component';
 
-import { ShopPageComponent } from '../components/shop-page/shop-page.component';
 import { CollectiblesComponent } from '../components/collectibles/collectibles.component';
 import { PcGamingComponent } from '../components/pc-gaming/pc-gaming.component';
 import { HeaderComponent } from '../components/header/header.component';

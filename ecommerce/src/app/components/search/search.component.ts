@@ -8,6 +8,9 @@ import { MockProductService } from 'src/app/services/mock-product.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+moreDetailsPage(_t10: any) {
+throw new Error('Method not implemented.');
+}
   searchQuery: string = '';
   
   filteredProducts: any[] = [];

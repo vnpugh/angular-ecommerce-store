@@ -6,6 +6,7 @@
     padding: 20px 0;
     font-family: Arial, sans-serif; 
     border-top: 1.5px solid rgb(0, 0, 0); 
+    margin-top: 300px;
   }
   .footer-container {
     display: flex;

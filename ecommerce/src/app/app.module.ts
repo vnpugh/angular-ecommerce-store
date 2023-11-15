@@ -24,7 +24,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
-import { ShopPageComponent } from './components/shop-page/shop-page.component';
+
 import { VideogamesComponent } from './components/videogames/videogames.component';
 import { GameConsolesComponent } from './components/game-consoles/game-consoles.component';
 import { ControllersComponent } from './components/controllers/controllers.component';
@@ -39,8 +39,7 @@ import { SaleComponent } from './components/sale/sale.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
-
-
+import { ShopPageComponent } from './components/shop-page/shop-page.component';
 
 
 @NgModule({
@@ -56,7 +55,7 @@ import { CartDetailsComponent } from './components/cart-details/cart-details.com
     ProductCardComponent,
     LoginComponent,
     RegistrationComponent,
-    ShopPageComponent,
+
     VideogamesComponent,
     GameConsolesComponent,
     ControllersComponent,
@@ -70,6 +69,7 @@ import { CartDetailsComponent } from './components/cart-details/cart-details.com
     CartItemComponent,
 
     CartDetailsComponent,
+     ShopPageComponent,
 
  
   ],

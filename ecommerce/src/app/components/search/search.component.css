@@ -1,0 +1,51 @@
+.search-container {
+    display: flex;
+    flex-direction: row; /* Aligns children in a row */
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    gap: 20px; /* Spacing between items */
+    overflow-x: auto; /* Enables horizontal scrolling */
+  }
+  
+  .filtered-products {
+    flex: 0 0 auto; /* Children will not grow or shrink and will respect their width */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    /* Set a fixed width or a max-width depending on your design requirements */
+    width: 200px; /* Example fixed width */
+    margin-bottom: 20px; /* Spacing below each card */
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-img-top {
+    max-width: 100%; /* Image will scale to the parent container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%; /* Button takes the full width of the card */
+    margin-top: 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
