@@ -8,13 +8,23 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
+
   private cartItems: CartItem[] = [];
   private cartItemCount = new BehaviorSubject<number>(0);
+
+  private subtotal = new BehaviorSubject<number>(0);
+  private tax = new BehaviorSubject<number>(0);
+  private shipping = new BehaviorSubject<number>(0);
+  private total = new BehaviorSubject<number>(0);
+
+    // public observables to expose to components
+    subtotal$ = this.subtotal.asObservable();
+    tax$ = this.tax.asObservable();
+    shipping$ = this.shipping.asObservable();
+    total$ = this.total.asObservable();
  
     // Observable for the item count
     cartItemCount$ = this.cartItemCount.asObservable();
-
-
 
   addToCart(product: Product, quantity: number): void {
     const existingCartItem = this.cartItems.find(item => item.product.id === product.id);
@@ -34,10 +44,33 @@ export class CartService {
    this.cartItemCount.next(totalCount);
  }
 
-  getCartItems(): CartItem[] {
+getCartItems(): CartItem[] {
     return this.cartItems;
   }
  
-        // ... potentially other methods related to cart operations 
+
+recalculateTotals(): void {
+  const newSubtotal = this.cartItems.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
+  this.subtotal.next(newSubtotal);
+
+  // Assuming shipping is free over a certain subtotal, otherwise a flat rate
+  const newShipping = newSubtotal > 79 ? 0 : 5.99;
+  this.shipping.next(newShipping);
+  
+  // Assuming tax is a fixed percentage of the subtotal
+  const taxRate = 0.08; 
+  const newTax = newSubtotal * taxRate;
+  this.tax.next(newTax);
+  
+  const newTotal = newSubtotal + newShipping + newTax;
+  this.total.next(newTotal);
+}
+
+
+updateCartItems(cartItems: CartItem[]) {
+  this.cartItems = cartItems; //need to update internal cart items array
+  this.recalculateTotals();
+}
+
 
 }

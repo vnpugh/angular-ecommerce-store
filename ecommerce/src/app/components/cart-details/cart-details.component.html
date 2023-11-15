@@ -1,25 +1,21 @@
 
 <div class="cart-container">
-    <div class="cart-items">
-      <div class="cart-item" *ngFor="let item of cartItems">
-        <img [src]="item.product.image" alt="Product Image" class="product-image">
-        <div class="product-details">
-          <h2>{{ item.product.name }}</h2>
-          <div class="quantity-selector">
-            <label for="quantity">Quantity:</label>
-            <select [(ngModel)]="item.quantity">
-              <!-- Options could be generated dynamically as well -->
-              <option value="1">Qty 1</option>
-              <!-- Add more options as needed -->
-            </select>
-          </div>
-          <div class="product-pricing">
-            <p>{{ item.product.price | currency }}</p>
-          </div>
+  <div class="cart-items">
+    <div class="cart-item" *ngFor="let item of cartItems; let i = index">
+      <img [src]="item.product.image" alt="{{ item.product.name }}" class="product-image">
+      <div class="product-details">
+        <h2>{{ item.product.name }}</h2>
+        <p>Price: {{ item.product.price | currency }}</p>
+        <div class="quantity-selector">
+          <label for="quantity-{{i}}">Quantity:</label>
+          <select [(ngModel)]="item.quantity" id="quantity-{{i}}">
+            <option *ngFor="let qty of maxQuantity" [value]="qty">Qty {{ qty }}</option>
+          </select>
         </div>
+        <button (click)="removeItem(i)" class="btn btn-danger">Remove</button>
       </div>
     </div>
-    
+  </div>
     <div class="order-summary">
       <h3>ORDER SUMMARY</h3>
       <p>Subtotal ({{ totalItems }} items): {{ subtotal | currency }}</p>
