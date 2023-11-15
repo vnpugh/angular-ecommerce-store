@@ -31,7 +31,7 @@ import { ControllersComponent } from './components/controllers/controllers.compo
 import { CollectiblesComponent } from './components/collectibles/collectibles.component';
 import { PcGamingComponent } from './components/pc-gaming/pc-gaming.component';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
-import { GiantBombService } from './services/giant-bomb.service';
+
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { MockProductService } from './services/mock-product.service';
 import { SearchComponent } from './components/search/search.component';
@@ -50,7 +50,7 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     HomeComponent,
     CartComponent,
     CheckoutComponent,
-    ProductComponent,
+   
     CarouselComponent,
     ProductCardComponent,
     LoginComponent,
@@ -88,7 +88,7 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 
   ],
-  providers: [MockProductService, GiantBombService],
+  providers: [MockProductService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
