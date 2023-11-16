@@ -65,13 +65,15 @@
                   <i class="fas fa-user"></i></a>
               </li>
 
+              <!-- cart -->
               <li class="nav-item active">
-                <a class="nav-link" routerLink="/">
-                  <i class="fas fa-shopping-cart">
-                    <span class="badge">{{ cartService.cartItemCount$ | async }}</span>
-                  </i>
+                <a class="nav-link" routerLink="/cart-details">
+                    <i class="fas fa-shopping-cart">
+                        <span class="badge">{{ cartService.cartItemCount$ | async }}</span>
+                    </i>
                 </a>
-              </li>
+            </li>
+            
               
             </ul>
           </div>

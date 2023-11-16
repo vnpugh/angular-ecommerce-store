@@ -33,7 +33,7 @@ export class CartService {
       existingCartItem.quantity += quantity;
     } else {
       this.cartItems.push({
-        id: this.cartItems.length + 1, // Or a better id generation strategy
+        id: this.cartItems.length + 1, 
         quantity,
         product
       });
@@ -67,10 +67,15 @@ recalculateTotals(): void {
 }
 
 
+
 updateCartItems(cartItems: CartItem[]) {
-  this.cartItems = cartItems; //need to update internal cart items array
+  this.cartItems = cartItems;
   this.recalculateTotals();
+  // Update the item count observable value
+  const totalCount = this.cartItems.reduce((sum, current) => sum + current.quantity, 0);
+  this.cartItemCount.next(totalCount); // This should update the cart icon count
 }
+
 
 
 }

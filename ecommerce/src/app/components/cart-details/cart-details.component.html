@@ -8,9 +8,16 @@
         <p>Price: {{ item.product.price | currency }}</p>
         <div class="quantity-selector">
           <label for="quantity-{{i}}">Quantity:</label>
+
+          <!-- Add (change) event to call updateQuantity when the selection changes -->
+<!-- <select [id]="'quantity-' + i" [ngModel]="item.quantity" (ngModelChange)="updateQuantity(item, $event)">
+  <option *ngFor="let qty of [].constructor(10); let q = index" [value]="q+1">Qty {{ q+1 }}</option>
+</select> -->
+
           <select [(ngModel)]="item.quantity" id="quantity-{{i}}">
             <option *ngFor="let qty of maxQuantity" [value]="qty">Qty {{ qty }}</option>
           </select>
+
         </div>
         <button (click)="removeItem(i)" class="btn btn-danger">Remove</button>
       </div>

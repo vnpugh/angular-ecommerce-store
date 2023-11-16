@@ -10,6 +10,10 @@ import { CartItem } from 'src/app/models/cart.model';
 
 export class CartDetailsComponent implements OnInit {
 
+updateQuantity(_t5: CartItem,$event: any) {
+throw new Error('Method not implemented.');
+}
+
   cartItems: CartItem[] = [];
   maxQuantity: number[] = [...Array(10).keys()].map(x => x + 1); 
   subtotal!: number; 
@@ -54,5 +58,10 @@ export class CartDetailsComponent implements OnInit {
     this.cartService.total$.subscribe(newTotal => this.total = newTotal);
     this.totalItems = this.cartItems.length; // Assuming each item is counted once regardless of quantity
   }
+
+
+
+
+
 }
 
