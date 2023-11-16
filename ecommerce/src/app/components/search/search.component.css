@@ -4,60 +4,97 @@
 
 }
 .search-container {
-    display: flex;
-    flex-direction: row; /* Aligns children in a row */
-    flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    margin-left: 11em;
-    margin-top: 30px;
- 
- 
+  padding: 18px;
+  margin-left: 150px; 
+}
+
+
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Example shadow */
+    transition: 0.3s; /* Smooth transition for hover effect */
+    margin: 10px; /* Space between cards */
   }
   
-  .filtered-products {
-    flex: 0 0 auto; /* Children will not grow or shrink and will respect their width */
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-
-    width: 240px;
-   
-
-    margin-bottom: 20px; /* Spacing below each card */
-    display: inline-block;
-  }
-  
-  .card-body {
-    padding: 15px;
-    text-align: center;
-    display: inline-block;
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Larger shadow on hover */
   }
   
   .card-img-top {
-    max-width: 100%; /* Image will scale to the parent container */
-    height: 200px; /* Maintain aspect ratio */
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-body {
+    padding: 9px; /* Padding inside the card */
+    text-align: center; /* Center the text */
   }
   
   .card-title {
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 15px; /* Match GameStop's title size */
+    margin-bottom: 15px; /* Space below the title */
   }
   
   .card-text {
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 14px; /* Slightly smaller font size for text */
+    color: #000000; /* Dark grey text */
+    margin-bottom: 15px; /* Space below the text */
   }
   
   .btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 100%; /* Button takes the full width of the card */
-    margin-top: 10px;
+    background-color: #0046be; /* GameStop's button color */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allow width to be set */
+    font-size: 16px; /* Match GameStop's button text size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .btn-primary:hover {
+    background-color: #00b333;
+  } 
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive grid adjustments */
+  @media (min-width: 992px) {
+    .col-lg-3 {
+      flex: 0 0 25%; /* Each card takes 25% of the container width */
+      max-width: 25%; /* Prevent any larger than 25% */
+    }
   }
   
-  .btn-primary:hover {
-    background-color: #0056b3;
+  /* This is for extra small to medium devices */
+  @media (max-width: 991.98px) {
+    .col-md-4 {
+      flex: 0 0 50%; /* Each card takes 50% of the container width on medium devices */
+      max-width: 50%; /* Prevent any larger than 50% */
+    }
   }
+  
+  /* Adjust padding for smaller screens */
+  @media (max-width: 576px) {
+    .card-body {
+      padding: 10px;
+    }
+  
+    .btn-primary {
+      padding: 8px 16px; /* Slightly smaller padding on small devices */
+      font-size: 14px; /* Slightly smaller font size for button text */
+    }
+  }
+  
   

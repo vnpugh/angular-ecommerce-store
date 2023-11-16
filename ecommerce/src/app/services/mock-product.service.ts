@@ -230,7 +230,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-16.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -246,7 +246,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-22.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -263,7 +263,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-26.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -280,7 +280,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-21.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -296,7 +296,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-12.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -312,7 +312,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-24.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -328,7 +328,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-25.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -344,7 +344,7 @@ export class MockProductService {
         description: 'Another sample product.',
         image: 'assets/mock-img-27.png',
         category: {
-            id: 2, name: 'controllers',
+            id: 3, name: 'controllers',
             description: '',
             image: ''
         },
@@ -352,6 +352,25 @@ export class MockProductService {
         isNewRelease: false, 
         isPreOrder: false
       },
+
+
+          // Gift Cards
+    {
+      id: 4,
+      name: 'Roblox',
+      price: 50.00,
+      salePrice: 0.00,
+      description: 'This is a gift card.',
+      image: 'assets/mock-img-33.png',
+      category: {
+          id: 4, name: 'giftcards',
+          description: '',
+          image: ''
+      },
+      releaseDate: '11.30.23',
+      isNewRelease: false, 
+      isPreOrder: true
+    },
 
 
 

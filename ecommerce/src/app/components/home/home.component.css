@@ -1,74 +1,85 @@
 
-.image-gallery {
-    display: flex;
-    flex-direction: row; /* Align children (cards) in a row */
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
-    gap: 20px; /* Spacing between cards */
-    justify-content: center; /* Center cards in the container */
-    padding: 20px; /* Padding around the entire gallery for some spacing */
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.take-your-pick {
+  color: #757575; 
+}
+
+.heading-container {
+  margin-right: 2em;
+  margin-top: 50px;
+
+}
+
+.brand-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+}
+
+.brand-card {
+  width: 200px; /* Fixed width, adjust as needed */
+  height: 200px; /* Fixed height, adjust as needed */
+  border: 1px solid #e1e1e1; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the content fits in the card */
+  background-color: #fff; /* Card background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.brand-card img {
+  max-width: 80%; /* Logo takes up to 80% of card width */
+  max-height: 80%; /* Logo takes up to 80% of card height */
+  object-fit: contain; /* Keep aspect ratio */
+}
+
   
-  .image-card {
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    width: 200px; /* Set a fixed width for each card */
-    text-align: center; /* Center text and button inside the card */
-    padding: 10px;
-    background-color: #fff; /* Optional: set a background color for cards */
-  }
-  
-  .image-card img {
-    max-width: 100%; /* Ensure the image is responsive and fits the card */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Optional: round corners on the image */
-  }
-  
-  .card-title {
-    font-size: 1.1rem; /* Set the size of the product name */
-    margin: 10px 0; /* Space between the title and the rest of the content */
-  }
-  
-  .card-text {
-    font-size: 0.9rem; /* Set the size of the product price text */
-    color: #333; /* Set the text color for the price */
-  }
-  
-  .date {
-    font-size: 0.8rem; /* Set the size of the release date text */
-    color: #555; /* Set the text color for the release date */
-    margin: 10px 0; /* Space between the release date and the button */
-  }
-  
-  .btn-dark.pre-order {
-    background-color: #343a40; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none;
-    padding: 8px 16px; /* Padding inside the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    width: 100%; /* Make the button full-width */
-    margin-top: 10px; /* Space above the button */
-  }
-  
-  .btn-dark.pre-order:hover {
-    background-color: #23272b; /* Button hover background color */
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -40,6 +40,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { ShopPageComponent } from './components/shop-page/shop-page.component';
+import { GiftCardsComponent } from './components/gift-cards/gift-cards.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { ShopPageComponent } from './components/shop-page/shop-page.component';
 
     CartDetailsComponent,
      ShopPageComponent,
+     GiftCardsComponent,
 
  
   ],
