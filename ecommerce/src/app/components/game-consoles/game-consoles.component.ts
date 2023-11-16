@@ -30,4 +30,5 @@ export class GameConsolesComponent implements OnInit {
   moreDetailsPage(product: { id: any; }) {
     this.router.navigate(['/product-details', product.id]);
   }
+  
 }

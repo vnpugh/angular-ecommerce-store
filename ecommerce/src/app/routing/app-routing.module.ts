@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent},
   { path: 'search-results', component: SearchComponent },
+  { path: 'search-results/:id', component: ProductDetailsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegistrationComponent },
   { path: 'cart', component: CartComponent },
@@ -30,9 +31,8 @@ const routes: Routes = [
   { path: 'gameconsoles', component: GameConsolesComponent },
   { path: 'controllers', component: ControllersComponent },
   { path: 'sale', component: SaleComponent },
-  {
-    path: 'product-details/:id', component: ProductDetailsComponent},
-    { path: 'cart-details', component: CartDetailsComponent },
+  { path: 'product-details/:id', component: ProductDetailsComponent},
+  { path: 'cart-details', component: CartDetailsComponent },
 
 ];
 

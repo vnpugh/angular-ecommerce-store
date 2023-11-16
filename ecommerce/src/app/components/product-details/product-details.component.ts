@@ -37,13 +37,12 @@ export class ProductDetailsComponent implements OnInit {
     // Get the 'id' parameter
     const productId = this.route.snapshot.paramMap.get('id');
     if (productId) {
-      // Use the injected productService to fetch the product
-      this.product = this.mockProductService.getProductById(+productId);
 
-      // If no product is returned, log an error or handle as appropriate
+
+      this.product = this.mockProductService.getProductById(+productId);
       if (!this.product) {
         console.error('Product not found');
-        // Handle the error, e.g., redirect to a 'product not found' page or display a message
+ 
       }
     }
   }

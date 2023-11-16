@@ -1,20 +1,23 @@
 
 
-<h2>Search Results</h2>
+<h3 class="heading-container">Search Results</h3>
 
 <div class="search-container">
-  <div *ngIf="filteredProducts.length > 0; else noResults">
-    <div *ngFor="let product of filteredProducts" class="filtered-products">
-      <div class="card-body">
+  <div *ngIf="filteredProducts.length > 0; else noResults" class="row">
+    <div *ngFor="let product of filteredProducts" class="col-md-4 mb-4">
+      <div class="card h-100">
         <img [src]="product.image" alt="{{ product.name }}" class="card-img-top">
-        <h4 class="card-title">{{ product.name }}</h4>
-        <p class="card-text">Price: ${{ product.price }}</p>
-        <p class="card-text">{{ product.description }}</p>
-        <button (click)="moreDetailsPage(product)" class="btn btn-primary">More Details</button>
+        <div class="card-body">
+          <h4 class="card-title">{{ product.name }}</h4>
+          <p class="card-text">Price: ${{ product.price }}</p>
+          <p class="card-text">{{ product.description }}</p>
+          <button (click)="moreDetailsPage(product)" class="btn btn-primary">More Details</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <ng-template #noResults>
   <p>No results found.</p>

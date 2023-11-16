@@ -1,9 +1,17 @@
+.heading-container {
+  margin-left: 6.2em;
+  margin-top: 50px;
+
+}
 .search-container {
     display: flex;
     flex-direction: row; /* Aligns children in a row */
     flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    gap: 20px; /* Spacing between items */
     overflow-x: auto; /* Enables horizontal scrolling */
+    margin-left: 11em;
+    margin-top: 30px;
+ 
+ 
   }
   
   .filtered-products {
@@ -11,19 +19,23 @@
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    /* Set a fixed width or a max-width depending on your design requirements */
-    width: 200px; /* Example fixed width */
+
+    width: 240px;
+   
+
     margin-bottom: 20px; /* Spacing below each card */
+    display: inline-block;
   }
   
   .card-body {
     padding: 15px;
     text-align: center;
+    display: inline-block;
   }
   
   .card-img-top {
     max-width: 100%; /* Image will scale to the parent container */
-    height: auto; /* Maintain aspect ratio */
+    height: 200px; /* Maintain aspect ratio */
   }
   
   .card-title {
