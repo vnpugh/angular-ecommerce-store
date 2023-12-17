@@ -354,6 +354,8 @@ export class MockProductService {
       },
 
 
+
+      
           // Gift Cards
     {
       id: 4,
@@ -369,8 +371,78 @@ export class MockProductService {
       },
       releaseDate: '11.30.23',
       isNewRelease: false, 
-      isPreOrder: true
+      isPreOrder: false
     },
+    {
+      id: 4.1,
+      name: 'XBox',
+      price: 25.00,
+      salePrice: 0.00,
+      description: 'This is a gift card.',
+      image: 'assets/mock-img-34.png',
+      category: {
+          id: 4, name: 'giftcards',
+          description: '',
+          image: ''
+      },
+      releaseDate: '11.30.23',
+      isNewRelease: false, 
+      isPreOrder: false
+    },
+
+    {
+      id: 4.2,
+      name: 'Twitch',
+      price: 50.00,
+      salePrice: 0.00,
+      description: 'This is a gift card.',
+      image: 'assets/mock-img-35.png',
+      category: {
+          id: 4, name: 'giftcards',
+          description: '',
+          image: ''
+      },
+      releaseDate: '11.30.23',
+      isNewRelease: false, 
+      isPreOrder: false
+    },
+
+    {
+      id: 4.3,
+      name: 'GooglePlay',
+      price: 50.00,
+      salePrice: 0.00,
+      description: 'This is a gift card.',
+      image: 'assets/mock-img-36.png',
+      category: {
+          id: 4, name: 'giftcards',
+          description: '',
+          image: ''
+      },
+      releaseDate: '11.30.23',
+      isNewRelease: false, 
+      isPreOrder: false
+    },
+
+    {
+      id: 4.4,
+      name: 'Twitch',
+      price: 50.00,
+      salePrice: 0.00,
+      description: 'This is a gift card.',
+      image: 'assets/mock-img-35.png',
+      category: {
+          id: 4, name: 'giftcards',
+          description: '',
+          image: ''
+      },
+      releaseDate: '11.30.23',
+      isNewRelease: false, 
+      isPreOrder: false
+    },
+
+
+
 
 
 

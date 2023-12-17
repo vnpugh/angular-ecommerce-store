@@ -8,6 +8,11 @@ import { MockProductService } from 'src/app/services/mock-product.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+products: any;
+quantity: any;
+addToCart(_t17: any,arg1: any) {
+throw new Error('Method not implemented.');
+}
 
   preOrderProducts: any[] = []; //True
 

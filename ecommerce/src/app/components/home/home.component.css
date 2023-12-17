@@ -1,55 +1,13 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .take-your-pick {
   color: #757575; 
 }
 
 .heading-container {
-  margin-right: 2em;
-  margin-top: 50px;
-
+  margin-top: 70px;
+  font-size: 24px;
+  margin-left: 2em;
 }
 
 .brand-container {
@@ -92,7 +50,7 @@
 
 /* Browse by Category Section */
 .heading-container {
-    margin-left: 6.5em;
+    margin-left: 7.8em;
     margin-top: 50px;
 
  }

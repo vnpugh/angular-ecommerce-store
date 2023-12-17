@@ -1,1 +1,15 @@
-<p>gift-cards works!</p>
+
+<!-- gift-cards.component.html -->
+<h3 class="heading-container">Video Game Gift Cards</h3>
+<div class="gift-container">
+  <div *ngFor="let product of products" class="gift-card">
+    <img [src]="product.image" [alt]="product.name" class="card-img-top">
+    <div class="card-body">
+      <h2 class="card-title">{{ product.name }}</h2>
+      <p class="card-text">Price: ${{ product.price }}</p>
+      <p class="card-text">{{ product.description }}</p>
+      <button (click)="addToCart(product)" class="btn btn-primary">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
